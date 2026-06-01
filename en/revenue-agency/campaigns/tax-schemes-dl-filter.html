@@ -117,10 +117,59 @@ notedlinks:
 
 
 
-
+<section id="filteredSchemeList" class="wb-tagfilter">
 <h2 class="mrgn-tp-0" id="h2">Common tax schemes</h2>
-<p>Find details and examples of some of the latest tax and benefit schemes.<!-- You can view all schemes or use the filter to find a specific scheme type. --></p>
+<p>Find details and examples of some of the latest tax and benefit schemes. You can view all schemes or use the filter to find a specific scheme type. </p>
 
+<!--new-->
+<div class="row">
+		<div class="col-xs-12 col-sm-4 col-lg-3">
+			<details open>
+				<summary>
+					<h3>Filter options</h3>
+				</summary>
+				<div class="form-group mrgn-bttm-0">
+					<fieldset>
+						<legend class="h5 mrgn-tp-0"><span class="field-name">Scheme target</span></legend>
+						<ul class="list-unstyled">
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="target" class="wb-tagfilter-ctrl" value="target__individuals"> Individuals
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="target" class="wb-tagfilter-ctrl" value="target__business"> Business owners
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="target" class="wb-tagfilter-ctrl" value="target__newcomers"> Newcomers to Canada
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
+			</details>
+		</div>
+
+		<div class="col-xs-12 col-sm-8 col-lg-9">
+			<dl class="dl-horizontal dt-max
+			<!--<ul class="list-unstyled--> scheme-list wb-tagfilter-items" data-wb-json='{
+				"url": "data_en.json#/events",
+				"mapping": [
+					{ "selector": "li", "attr": "data-wb-tags", "value": "/tags" },
+					{ "selector": "h3", "value": "/title" },
+				<!--	{ "selector": ".event-date", "value": "/date" },
+					{ "selector": ".event-time", "value": "/time" },
+					{ "selector": ".event-location", "value": "/location" },-->
+					{ "selector": ".scheme-target", "value": "/target" }
+				]
+			}'>
+
+
+				
+<<!--old
 <section id="filteredEventsList" class="wb-tagfilter provisional">
   <div class="row mrgn-bttm-xl">
     <div class="col-md-3">
@@ -157,7 +206,7 @@ notedlinks:
                       <label>
                         <input type="radio" name="scam-fltr" class="wb-tagfilter-ctrl" value="who__newcomers">
                         Newcomers </label>
-                    </li>
+                    </li>-->
                   <!--  <li class="radio">
                       <label>
                         <input type="radio" name="scam-fltr" class="wb-tagfilter-ctrl" value="ways__text">
@@ -175,7 +224,7 @@ notedlinks:
                         Letter </label>
                     </li>
                   </ul> -->
-                </fieldset>
+               <!-- </fieldset>
               </form>
             </div>
           </div>
@@ -194,7 +243,7 @@ notedlinks:
           <input type="search" class="hidden" id="customSearchUI">
         </div>
 	    <div class="wb-tagfilter-items">-->
-  <dt data-wb-tags="who__newcomers">Newcomers to Canada benefit scheme</dt>
+  <dt data-wb-tags="target__newcomers">Newcomers to Canada benefit scheme</dt>
 
 
 <!--<td><p class="small"><strong>Target</strong>: Newcomers to Canada</p>-->
@@ -206,7 +255,7 @@ notedlinks:
                   <ul>
                     <li>Someone telling you to file a Canadian tax return for the years before you lived in Canada </li>
                   </ul></details></dd>
-<dt>Multilevel marketing (MLM) businesses scheme</dt>
+<dt data-wb-tags="target__business">Multilevel marketing (MLM) businesses scheme</dt>
 
  
                  <!--   <p class="small"><strong>Target</strong>: Participants in MLMs or direct marketing</p>-->
@@ -226,14 +275,14 @@ notedlinks:
                   </ul>
                   			<p class="mrgn-tp-md"><strong>Refer to the CRA’s information:</strong> <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses.html">Business expenses</a></p>
 				</details></dd>
-<dt>Canada Emergency Wage Subsidy (CEWS) scheme</dt>
+<dt data-wb-tags="target__business>Canada Emergency Wage Subsidy (CEWS) scheme</dt>
  
  <!-- <p class="small"><strong>Target</strong>: Businesses</p>-->
 <dd> <details>
 						<summary>Description: CEWs schemes</summary>
 					<!--<h4>Description</h4>-->
                   <p>Promoters encouraged business owners to artificially inflate or falsify eligibility criteria for the CEWS to increase their pay-out. </p></details></dd>
-<dt>Self-directed RRSP tax schemes</dt>
+<dt data-wb-tags="target__individuals>Self-directed RRSP tax schemes</dt>
  
   <!-- <p class="small"><strong>Target</strong>: RRSP owners</p>-->
 <dd><details>
@@ -251,7 +300,7 @@ notedlinks:
                     <li>Are you promised unrealistic returns based on the current investment rates? Do some research of average returns to see if what you are being promised is reasonable. </li>
                     <li>Are you re-investing the original funds removed from your RRSP in order to get a new RRSP tax deduction receipt? </li>
                   </ul></details></dd>
-<dt>Real estate investments schemes</dt>
+<dt data-wb-tags="target__individuals>Real estate investments schemes</dt>
 
 <!--  <p class="small"><strong>Target</strong>: Individuals investing in real estate through a limited partnership</p>-->
 <dd><details><summary>Description: Real estate investments schemes</summary>
@@ -259,7 +308,7 @@ notedlinks:
                   <p>For example, the investor has invested $5,500 and is advised that they can write it off on their taxes for $12,500 due to financial services, lease enhancement and tenant improvement costs expensed in the first year. </p>
                 
 </details></dd>
-<dt>Health spending accounts (HSA) scheme</dt>
+<dt data-wb-tags="target__business>Health spending accounts (HSA) scheme</dt>
 
 
 <!--                    <p class="small"><strong>Target</strong>: Small business owners</p>-->
@@ -273,7 +322,7 @@ notedlinks:
                     <li>Do not reply to the text message, or click on any link provided </li>
                     <li>Do not provide any personal or account information </li>
                   </ul>--></details></dd>
-<dt>Offshore leveraged insured annuity (LIA) schemes</dt>
+<dt data-wb-tags="target__individuals>Offshore leveraged insured annuity (LIA) schemes</dt>
 
 
 <!--                   <p class="small"><strong>Target</strong>: Corporation shareholders</p>-->
@@ -290,7 +339,7 @@ notedlinks:
                   </ul>
                   <p class="mrgn-tp-md"><span class="h5">Refer to the Canadian Securities Administrators’ information:</span> <a href="https://www.securities-administrators.ca/investor-tools/avoiding-fraud/">Avoiding Fraud</a></p>-->
 				</details></dd>
-<dt>Offshore disability insurance plan schemes</dt>
+<dt data-wb-tags="target__individuals>Offshore disability insurance plan schemes</dt>
 
 
 <!--                  <p class="small"><strong>Target</strong>: </p>-->
@@ -305,7 +354,7 @@ notedlinks:
                     <li>The corporate taxpayer may deduct an insurance premium expense </li>
                   </ul></details></dd>
 
-<dt>Tax shelter gifting schemes</dt>
+<dt data-wb-tags="target__individuals>Tax shelter gifting schemes</dt>
 
 
 <!--                   <p class="small"><strong>Target</strong>: Individuals donating to a charity</p>-->
@@ -321,7 +370,7 @@ notedlinks:
                     <li>The promoter may offer you an unconventional way to pay back the loan, such as through equivalent products. The loan repayment strategy might be how the promoter is offering to deliver a large income tax credit to the taxpayer, in some cases saying they can almost double their first donation. </li>
                  <li>The first donation may include a prepaid interest payment on the loan, an additional small cash donation to the charity, and other fees. You could receive donation receipts for the total amount of the loan and cash donation. </li>
                   </ul></details></dd>
-<dt>Straddle-loss scheme</dt>
+<dt data-wb-tags="target__individuals>Straddle-loss scheme</dt>
 
 
 <!--                  <p class="small"><strong>Target</strong>: </p>-->
@@ -340,7 +389,7 @@ notedlinks:
                   </ul>
                   <p class="mrgn-tp-md"><span class="h5">Refer to the CRA's information:</span> <a href="/en/revenue-agency/corporate/scams-fraud/report-scam.html">Report a scam or identity theft</a></p>-->
 				 </details></dd>
-<dt>Aggressive GST/HST tax schemes</dt>
+<dt data-wb-tags="target__individuals>Aggressive GST/HST tax schemes</dt>
 
 
 <!--                    <p class="small"><strong>Target</strong>: </p>-->
@@ -366,18 +415,21 @@ notedlinks:
                    <h4>What to do</h4>
                   <p>This is not a complete list, and the presence of one or more indicators cannot identify a scheme with certainty. If you come across any of these signs, consider taking a closer look, seeking independent advice, and verifying the legitimacy of the arrangement before going ahead. By staying informed and attentive to these warning signs, you can protect yourself and your business from potential fraud. </p>
 				 </details></dd>
-
+			</dl>
+		</div>
+</div>
+</section>
 
 
     
 
     
   
-        </div>
+     <!--   </div>
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 
 <!--<div class="col-md-4">
