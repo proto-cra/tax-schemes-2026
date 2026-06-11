@@ -8,6 +8,10 @@
     "destination": "/tax-schemes-2026/en/revenue-agency/campaigns/tax-schemes.html"
   },
   {
+    "origin": "https://www.canada.ca/en/services/taxes/business-registration.html",
+    "destination": "/tax-schemes-2026/en/services/taxes/business-registration.html"
+  },
+  {
     "origin": "https://www.canada.ca/en/revenue-agency/campaigns/tax-schemes-dl-filter.html",
     "destination": "/tax-schemes-2026/en/revenue-agency/campaigns/tax-schemes-dl-filter.html"
   },
@@ -34,5 +38,33 @@
   {
     "origin": "https://www.canada.ca/en/revenue-agency/campaigns/tax-schemes-xh.html",
     "destination": "/tax-schemes-2026/en/revenue-agency/campaigns/tax-schemes-xh.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/child/cheating.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/child/cheating.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/child/cradoing.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/child/cradoing.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/child/report.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/child/report.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/child/scams.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/child/scams.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud-live.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/scams-fraud-live.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud-parent.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/scams-fraud-parent.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud-thing-task.html",
+    "destination": "/tax-schemes-2026/en/revenue-agency/corporate/scams-fraud-thing-task.html"
   }
 ]
